@@ -155,6 +155,7 @@ TARGET_USES_LOGD := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_RECOVERY_DEVICE_MODULES += debuggerd
 TW_RECOVERY_ADDITIONAL_RELINK_FILES += $(TARGET_OUT_EXECUTABLES)/debuggerd
+TW_LOAD_VENDOR_MODULES := "FW_ILITEK_TDDI_TM.bin exfat.ko ilitek_v3_mmi.ko mmi_info.ko moto_f_usbnet.ko qpnp_adaptive_charge.ko sx933x_sar.ko fpc1020_mmi.ko mmi_annotate.ko mmi_sys_temp.ko mpq-adapter.ko sensors_class.ko utags.ko"
 BOARD_PROVIDES_GPTUTILS := true
 
 # TWRP recovery relink binary files
