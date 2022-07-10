@@ -15,6 +15,7 @@
 /usb-otg         auto       /dev/block/sdg1         /dev/block/sdg                flags=display="USB OTG";storage;wipeingui;removable
 
 # Dynamic Partitions
-system           ext4       /system                                               display="System"
-vendor           ext4       /vendor                                               display="Vendor"
-product          ext4       /product                                              display="Product"
+system             ext4       /system                                               display="System"
+vendor             ext4       /vendor                                               display="Vendor"
+product            ext4       /product                                              display="Product"
+system_ext         ext4       /system_ext                                           display="System_ext"
