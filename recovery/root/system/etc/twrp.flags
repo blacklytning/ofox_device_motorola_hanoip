@@ -9,6 +9,10 @@
 /data            f2fs       /dev/block/bootdevice/by-name/userdata                flags=fileencryption=ice:aes-256-cts
 /misc            emmc       /dev/block/bootdevice/by-name/misc
 /metadata        ext4       /dev/block/bootdevice/by-name/metadata                flags=backup=1;display="Metadata"
+/efs1            emmc       /dev/block/bootdevice/by-name/modemst1                flags=backup=1;display="EFS"
+/efs2            emmc       /dev/block/bootdevice/by-name/modemst2                flags=backup=1;subpartitionof=/efs1
+/persist         ext4       /dev/block/bootdevice/by-name/persist                 flags=backup=1;display="Persist"
+/prodpersist     ext4       /dev/block/bootdevice/by-name/prodpersist             flags=backup=1;display="Product Persist"
 
 # Removable storage
 /external_sd     auto       /dev/block/mmcblk0p1    /dev/block/mmcblk0            flags=display="Micro SDcard";storage;wipeingui;removable
