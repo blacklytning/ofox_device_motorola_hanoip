@@ -38,9 +38,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export OF_AB_DEVICE=1
 	export LC_ALL="C"
  	export ALLOW_MISSING_DEPENDENCIES=true
- 	export OF_SKIP_FBE_DECRYPTION_SDKVERSION=31
-        # export TARGET_DEVICE_ALT="generic"
-	# export OF_TARGET_DEVICES="generic"
 	
 	# Screen Settings
 	export OF_SCREEN_H=2460 
