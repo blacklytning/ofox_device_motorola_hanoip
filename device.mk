@@ -73,6 +73,9 @@ PRODUCT_PACKAGES_ENG += \
     qcom_decrypt \
     qcom_decrypt_fbe
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.dm_default_key.options_format.version=2
+
 # tzdata
 PRODUCT_PACKAGES_ENG += \
     tzdata_twrp
